@@ -5,3 +5,7 @@ Encontraremos scr de audio y video para usarlos de ejemplo en tu proyecto
 
 https://picocss.com/
 Framework de CSS
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation
+Validaciones de tipo Formulario
