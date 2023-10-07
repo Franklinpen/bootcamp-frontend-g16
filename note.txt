@@ -9,3 +9,12 @@ Framework de CSS
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation
 Validaciones de tipo Formulario
+
+https://www.frontendmentor.io/challenges
+diseños web para programadores
+
+https://github.com/victorvzn/bootcamp-frontend-g16
+git hub profesor
+
+https://fonts.google.com/
+fuentes de google
