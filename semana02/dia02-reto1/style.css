@@ -101,3 +101,7 @@ main {
   margin-top: 20px;
   cursor: pointer;
 }
+
+.content button:hover {
+    background-color: hsl(158, 57%, 24%);
+}
