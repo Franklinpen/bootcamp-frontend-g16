@@ -18,3 +18,14 @@ git hub profesor
 
 https://fonts.google.com/
 fuentes de google
+
+https://www.w3schools.com/
+aprende ccs
+
+https://cssreference.io/
+estilos ccs 
+
+https://lenguajecss.com/css/
+canal aprende CSS
+
+https://www.netlify.com/
