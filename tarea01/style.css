@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: #00AAB5;
+    align-items: center;
+    display: flex;
+    min-width: 320px;
+    color: #FFF;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline-flex;
+    padding-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ul {
+    position: absolute;
+    right: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #726f6feb;
+}
+
+.main-titulo {
+    font-size: 64px;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    padding-left: 26px;
+    padding-right: 16px;
+}
+
+.second-titulo {
+    font-size: 21px;
+}
+
+.container {
+    background-image: url(../tarea01/imagenes/codigo.png);
+    width: 100%;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    background-position: center center;
+}
+
+h1 {
+    padding-top: 45;
+    width: 100%;
+    text-align: center;
+    padding-top: 47px;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 200px;
+
+}
+
+.description {
+    display: flex;
+    width: 365px;
+    height: 117px;
+    background: rgba(114, 153, 254, 0.50);
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: justify;
+    padding: 16px;
+    margin-left: 66px;
+}
+
+.skills {
+    background-color: #7299FE;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.my-skills {
+    text-transform: capitalize;
+    color: #B508A3;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding: 27px;
+}   
+
+.fila01 {
+    display: flex;
+    padding-left: 36px;
+}
+
+.html {
+    width: 50%;
+    padding-left: 104px;
+}
+
+.barra-html1 {
+    background: #000;
+    width: 268px;
+    height: 17px;
+}
+
+.barra-html2 {
+    background: #FFF;
+    width: 364px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.barra-js1 {
+    background: #000;
+    width: 237px;
+    height: 17px;
+}
+
+.barra-js2 {
+    background: #FFF;
+    width: 364px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.fila02 {
+    display: flex;
+    padding-left: 36px;
+}
+
+.css {
+    width: 50%;
+    padding-left: 104px;
+}
+
+.barra-css1 {
+    background: #000;
+    width: 210px;
+    height: 17px;
+}
+
+.barra-css2 {
+    background: #FFF;
+    width: 364px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.barra-react1 {
+    background: #000;
+    width: 122px;
+    height: 17px;
+}
+
+.barra-react2 {
+    background: #FFF;
+    width: 364px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.fila03 {
+    display: flex;
+    padding-left: 36px;
+}
+
+.angular {
+    width: 50%;
+    padding-left: 104px;
+}
+
+.barra-angular1 {
+    background: #000;
+    width: 137px;
+    height: 17px;
+}
+
+.barra-angular2 {
+    background: #FFF;
+    width: 364px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.barra-python1 {
+    background: #000;
+    width: 182px;
+    height: 17px;
+}
+
+.barra-python2 {
+    background: #FFF;
+    width: 364px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.fila04 {
+    display: flex;
+    padding-left: 36px;
+}
+
+.figma {
+    width: 50%;
+    padding-left: 104px;
+}
+
+.barra-figma1 {
+    background: #000;
+    width: 182px;
+    height: 17px;
+}
+
+.barra-figma2 {
+    background: #FFF;
+    width: 364px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 86px;
+}
+
+.barra-nodejs1 {
+    background: #000;
+    width: 151px;
+    height: 17px;
+}
+
+.barra-nodejs2 {
+    background: #FFF;
+    width: 364px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 86px;
+}
+
+.servicios {
+    display: flex;
+    background-color: #FB7171;
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/*
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+*/
+
+:root {
+  /* FONTS */
+  --color: yellow;
+  --font-primary: 'Raleway', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  --font-size: 14px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* COLORS */
+
+  --primary-dark-blue-intro: hsl(217, 28%, 15%);
+  --primary-dark-blue-main: hsl(218, 28%, 13%);
+  --primary-dark-blue-footer: hsl(216, 53%, 9%);
+  --primary-dark-blue-testimonials: hsl(219, 30%, 18%);
+
+  --accent-cyan: hsl(176, 68%, 64%);
+  --accent-blue: hsl(198, 60%, 50%);
+  --accent-light-red: hsl(0, 100%, 63%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+/* RESETs */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  background-color: var(--primary-dark-blue-intro);
+  color: var(--neutral-white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  /* TODO: RWD para imágenes */
+}
+
+.wrapper {
+  width: 1440px;
+  /* TODO: Adaptar el ancho de la página a dispositivos móviles */
+}
+
+.header {
+  /* border: 1px solid red; */
+
+  font-family: var(--font-primary);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 3rem;
+}
+
+.header__nav {
+  /* border: 1px solid yellow; */
+
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+
+  display: flex;
+  gap: 3rem; /* 1rem = 14px (html) */
+}
+
+.hero {
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
+.hero__title {
+  width: 720px;
+
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 2.5rem;
+
+  text-align: center;
+}
+
+.hero__text {
+  width: 720px;
+
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  padding: 0 7rem;
+
+  text-align: center;
+}
+
+.hero__button {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  border: 0;
+  border-radius: 7rem;
+  padding: 1rem 1.5rem;
+  min-width: 220px;
+  color: var(--neutral-white);
+  background:
+    linear-gradient(
+      90deg,
+      var(--accent-cyan) 0%,
+      var(--accent-blue) 35%
+    )
+  ;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 340px 340px;
+  justify-content: center;
+  gap: 5rem;
+  background-color: var(--primary-dark-blue-main);
+}

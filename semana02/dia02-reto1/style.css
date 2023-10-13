@@ -105,3 +105,8 @@ main {
 .content button:hover {
     background-color: hsl(158, 57%, 24%);
 }
+
+img {
+  width: 100vh;
+  background-color: red;
+}
