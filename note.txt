@@ -37,4 +37,4 @@ reto2
 https://franklinpen.github.io/bootcamp-frontend-g16/semana02/día01-formulario-tablas-seo/reto-registrar.html
 
 https://tabler-icons.io/
-iconos para proyectos
+iconos para proyectos  
