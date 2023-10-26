@@ -1,0 +1,28 @@
+.hero {
+    padding: 10rem;
+}
+
+.hero-slide {
+    background-image: url(https://codescandy.com/coach/bootstrap-5/assets/images/hero-slide.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* .profile-img {
+    gap: 2rem;
+    padding: 2rem;
+} */
+
+.description-coach {
+    width: 500px;
+}
+
+.before-coach {
+    width: 700px;
+}
+
+.workshops {
+    width: 600px;
+}
