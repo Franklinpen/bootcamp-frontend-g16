@@ -10,6 +10,8 @@
     background-size: cover;
 }
 
+
+
 /* .profile-img {
     gap: 2rem;
     padding: 2rem;
@@ -26,3 +28,11 @@
 .workshops {
     width: 600px;
 }
+
+.footer {
+    background-color: #322857;
+}
+
+/* .footer-links {
+    width: 1000px;
+} */
