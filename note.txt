@@ -38,3 +38,9 @@ https://franklinpen.github.io/bootcamp-frontend-g16/semana02/día01-formulario-t
 
 https://fontawesome.com/icons
 Web site para descarga de iconos
+
+Ejercicios de js
+jschallenger.com 
+hackerRank.com
+coderbyte.com
+adventjs.com
