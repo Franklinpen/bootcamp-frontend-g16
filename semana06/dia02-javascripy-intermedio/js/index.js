@@ -51,7 +51,29 @@ console.log('splice', listaDeValores)
 console.log('bienvenido', length)
 console.log(listaDeValores.length)
 
-// Objetos
+// METODOS DE ARREGLOS
+
+// Metodos INCLUDES, nos indica si el valor que se pasa como parametro se encuentra en el arreglo y devuelve un boolenao
+
+const numeros = [1, 2, 3, 4, 5]
+
+console.log(numeros.includes(3))
+console.log(numeros.includes(99))
+
+// Metodo FILTER, nos ayuda a ubicar un elemento dentro de un arreglo usando una consicion y devuelve un arreglo con los resultados.
+
+const languages = ['javascript', 'php', 'python', 'c', 'c++', 'java', 'python']
+
+console.log(
+    languages.filter(
+        function(language) {
+            // return language === 'pyhon' ['python', 'python']
+            return language.includes('c')
+        }
+    )
+)
+
+// OBJETOS
 
 // const x { 
 //    KEY : VALUE,
@@ -95,3 +117,74 @@ console.log(miObjeto.cursos)
 console.log(miObjeto.cursos[1])
 console.log(miObjeto.cursos[1].nombre) // 1ra Forma usando .
 console.log(miObjeto.cursos[1]['nota']) // 2da Forma usando corchete []
+
+// ELIMINAR PROPIEDADES DE UN OBJETO
+
+console.log(miObjeto)
+delete miObjeto.colorFavorito // Con la Propiedad 'delete' se eliminan propiedades de un objeto
+console.log(miObjeto)
+
+// INSERTAR UNA NUEVA PROPIEDAD
+
+miObjeto.platoFavorito = 'Aji de Gallina'
+miObjeto['juegos favoritos'] = ['Crash Team Reacing', 'Mario', 'Minecraft']
+
+console.log(miObjeto)
+
+// DESTRUCTURING: Separar objetos en distintas propiedades
+
+const nombreValue = miObjeto.nombre
+const apellidoValue = miObjeto.apellido
+const cursosValue = miObjeto.cursos
+
+console.log(nombreValue, apellidoValue, cursosValue)
+
+const {nombre, apellido} = miObjeto
+
+console.log(nombre, apellido)
+
+const {nombre: nombreValor, apellido: apellidoValor} = miObjeto
+
+console.log(nombreValue, apellidoValue)
+
+// DESTRUCTURING PARA ARREGLOS
+
+const amigos = ['Angel', 'Carlos', 'Claudia', 'Franklin', 'Samuel']
+
+const [amigo1, amigo2] = amigos
+
+console.log(amigo1)
+console.log(amigo2)
+
+// SPREAD OPERATOR
+
+const producto = {
+    nombre: 'Laptop',
+    precio: 6800,
+    categoria: 'tech',
+}
+
+const cliente = {
+    nombre: 'Claudia',
+    isVip: true,
+}
+
+console.log(producto + cliente) // 
+const nuevoObjeto = {...producto, ...cliente}  // Tener cuidado con los nombres de propiedades de los objetos, se interponen
+
+console.log(nuevoObjeto)
+
+// SPREAD OPERATOR SIN COLICIONES
+
+const nuevoObjetoSinColiciones = {
+    producto: {...producto},
+    cliente: {...cliente},
+}
+
+console.log(nuevoObjetoSinColiciones)
+
+// OTROS MÉTODOS DE OBJETOS
+
+console.log(Object.keys(producto)) // Obtenmemos las claves (keys) del objeto
+console.log(Object.values(producto)) // Muestra solo los valores de un objeto
+console.log(Object.entries(producto))  // Convertimos un objeto en un arreglo
