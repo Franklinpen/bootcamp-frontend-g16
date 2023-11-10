@@ -1,6 +1,6 @@
 // console.log('Hola JS')
 
-const tasks = [] // Aquí almacenaremos las tareas [{}, {}, {}, .... ,{}]
+let tasks = [] // Aquí almacenaremos las tareas [{}, {}, {}, .... ,{}]
 
 const taskInput = document.querySelector('.task__input')  // Es la representación del inoput desde javascript
 const taskList = document.querySelector('.task__list')
@@ -33,6 +33,35 @@ taskInput.addEventListener('keypress', function (event) {
     }
 })
 
+function checkTask(event, currentIndex) {
+    // console.log('La tarea seleccionada tiene el indice', currentIndex)
+    // TODO: Hacer que el todo se tache usando solo Javascript
+    const checkboxSelected = event.target
+    const liParent = checkboxSelected.parentElement
+
+    liParent.classList.toggle('isChecked')
+
+    // console.log(tasks)
+
+    const taskSelected = tasks[currentIndex]
+    taskSelected.done = !taskSelected.done
+
+    console.log(tasks)
+}
+
+function removeTask (event, currentIndex) {
+    console.log('Eliminando', currentIndex)
+    // event.target.parentElement.remove()
+
+    const newTask = tasks.filter((task, index) => index !== currentIndex)
+
+    tasks = newTask
+
+    console.log(newTask)
+    renderTasks()
+
+}
+
 // En este punto se renderizara la lista de tareas en una función
 // Leera el newTask y mostrara en un li
         
@@ -45,9 +74,12 @@ function renderTasks() {
         // list = list + task.title
         list = list +  `
         <li>
-            <input type="checkbox" />
+            <input
+                type="checkbox" 
+                onchange="checkTask(event, ${index})"
+            />
             <span>${task.title}</span>
-            <button>Borrar</button>
+            <button onclick="removeTask(event, ${index})">Borrar</button>
         </li>
       `  
     })
