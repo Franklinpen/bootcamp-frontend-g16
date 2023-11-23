@@ -1,33 +1,47 @@
 // console.log('Hola modulos de Javascript!')
 import { renderPeliculas } from "./peliculas.js"
-import { fetchPeliculas } from "./services.js"
+import { fetchPeliculas, createPelicula } from "./services.js"
 
 const peliculasForm = document.getElementById('peliculasForm')
 
-peliculasForm.addEventListener('submit', (event) => {
-  event.preventDefault() // Cancela la actualizacion de pagina por defecto de un form
+peliculasForm.addEventListener('submit', async (event) => {
+  event.preventDefault()
+
   // console.log('Creando una nueva película...')
-  const peliculasForm = document.forms['peliculasForm']
 
-  console.log(peliculasForm)
+  const peliculaForm = document.forms['peliculasForm']
 
-  const nombre = peliculasForm.nombre.value
-  const imagen = peliculasForm.imagen.value
-  const estreno = peliculasForm.estreno.value
-  const generoId = peliculasForm.genero.value
-  const resumen = peliculasForm.resumen.value
+  console.log(peliculaForm)
 
-  console.log({nombre, imagen, estreno, generoId, resumen})
+  const nombre = peliculaForm.nombre.value
+  const imagen = peliculaForm.imagen.value
+  const estreno = peliculaForm.estreno.value
+  const genero = peliculaForm.genero.value // Este campo es del tipo cadena por defecto
+  const resumen = peliculaForm.resumen.value
+
+  console.log({ nombre, imagen, estreno, genero, resumen })
 
   const nuevaPelicula = {
-    nombre, 
+    nombre,
     imagen,
-    estreno, 
-    generoId: Number(generoId),
+    estreno,
+    generoId: Number(genero),
     resumen
   }
 
   console.log(nuevaPelicula)
+
+  const response = await createPelicula(nuevaPelicula)
+
+  console.log(response)
+
+  if (response) {
+    const peliculas = await fetchPeliculas()
+
+    renderPeliculas(peliculas)
+  }
+
+  peliculasForm.reset()
 })
 
 document.addEventListener('DOMContentLoaded', async (event) => {
